@@ -1,0 +1,23 @@
+1)  N Multiplications and N Addition are being performed by the kernel. These happens in sets of <thread_count> number of operations, as is specified by the tiling.
+
+2)  2*N/<thread_count> Global reads are being performed by the kernel. This is because each thread loads a single value in every tile.
+
+3)  1 Global write is being performed by the kernel. This occurs once the final value at that coordinate is computed.
+
+4)  It has been shown that unrolling loops can improve performance. Thus, by using separate kernels, one for handling general case(unrolled loop), and others for handling corner cases can be utilized.
+
+5)  The issues during implementation were handling corner cases, and determining the loops for handling the data being obtained from the global memory using tiling.
+
+6)
+
+7)  Splitting the matrix into a grid will allow the product of each grid to be computed independantly, although this requires that the global memory can atleast store 2 matrices of 1*N, where N is the height/width of the matrices to be multiplied.
+
+gridx=width/subimage_width;
+gridy=height/subimage_height;
+
+for i from 1 to gridy
+      for j from 1 to gridx
+            mult(image1[0 to width][i*subimage_height to i+1*subimage_height], \ 
+                              image2[j*subimage_widthto j*1*subimage_width][0 to height]
+      end
+en
