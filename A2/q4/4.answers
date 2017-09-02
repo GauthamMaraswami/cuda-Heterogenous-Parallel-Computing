@@ -1,0 +1,7 @@
+1.It performs n additions and n multiplication(i.e n=30 and m=30 in this program) by a kernel.
+
+2.2*n global reads is taking place in the kernel(i.e 60 in this case).
+
+3.Number of global writes performed by kernel is 1.
+
+4.Shared memory can be used by the kernel in order to reduce the number of global memory access.
