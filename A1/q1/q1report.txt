@@ -1,0 +1,13 @@
+Submitted by GAutham M 15co118 and yashwanth 15co154
+question 1 prints the properties of the gpu as presented in the screen shot
+
+1 .The Gpu on server has Tesla K40 architecture and has a compute capablity 3.5
+2. Maximum block dimention of gpu is 1024
+3.Maximum number of threads can be launched is 65535X512
+4.If each thread is dependent on other ie.the program is too sequential and parallelism is not possible .or transferring code to gpu is an overhead greater then the speed increased then using maximum threads.
+5.wrap size prevents thread from launching simultaneously
+6.shared memory is the part of the memory through which threads of the same block communicate with each other .size of shared meory is 49152.
+7.global memory is the slower part of the gpu,which is used when shared memory is not sufficient for communication between threads in different blocks.size of global memory is 3405643776;
+8.constant memory is used for the data whose execution does not change over the period of time,size of const memeor=65536bytes;
+9.wrap size refers to the number of processors running concurrently either paralley,or in pipelined fashion wrap size of given gpu is 32.
+10.Since the GPU has compute capablity more than 1.3 it supports double precision
