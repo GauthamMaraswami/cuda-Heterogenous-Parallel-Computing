@@ -1,0 +1,4 @@
+Submitted by GAutham M 15co118 and yashwanth 15co154
+
+this programs adds the numbers 0 to 15999 to the randomly generated floating point number and prints the sum.
+numbers are added parallely using the kernel function;
