@@ -1,0 +1,5 @@
+Submitted by GAutham M 15co118 and yashwanth 15co154
+question 4 prints the sum of 2 default matrix as shown in the screenshot
+1.number of floating operations  performed in the matrix addition kernel 10000
+2. number of global memory reads performed by your kernel is 20000
+3.global memory writes are being performed by your kernel is 10000
