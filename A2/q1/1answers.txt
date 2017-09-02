@@ -1,0 +1,4 @@
+1. 1 floating point operation per thread there are 4018 threads therefore 4018 operations.
+2.2 arrays are read initially
+3  1 global memory write
+4 it is like a library which made coding easier but understanding the working much complex
