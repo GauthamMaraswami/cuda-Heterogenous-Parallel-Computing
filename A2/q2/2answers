@@ -1,0 +1,7 @@
+1.The kernel does around BLUR_SIZE * BLUR_SIZE * 4 floating point operations per pixel of image.
+
+2.The kernel performs BLUR_SIZE * BLUR_SIZE * 4 global memory reads per pixel of image.
+
+3.The kernel performs 1 global memory write operation per pixel.
+
+4.Break the image into tiles, and store the tiled image in shared memory. In this way, global memory reads would reduce.
