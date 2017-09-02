@@ -1,0 +1,9 @@
+1. For every pixel,number of floating point operations performed are 2.
+
+2.Interleaving may take up more space due to allignment that exist.
+
+3.3
+
+4.1 global write
+
+5.use tile to parallelise and remove repetition
