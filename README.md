@@ -1,1 +1,1 @@
-# cuda-HIgh-Perfomance-Computing
+# cuda-Heterogenous-Parallel-Computing
